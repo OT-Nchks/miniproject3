@@ -2,7 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat',Bon-Vivant,Open-Sauce,Playfair-Display, sans-serif;
+    font-family: 'Montserrat',Bebas Neue,Open-Sauce,Playfair-Display, sans-serif;
     letter-spacing: .3px;
 }
 
@@ -45,6 +45,10 @@ div{
 	text-align:left;
 	transition: text-decoration 0.5s linear;
 }
+.nav{
+	height:70px;
+}
+
 .navb:hover{
   text-decoration: line-through;
   cursor:pointer;
@@ -79,14 +83,21 @@ div{
 
 .fontb{
 	font-family:playfair display;
-	font-style:italics;
+	font-style:italic;
 }
 
-.about{
-	height:300px;
-}
+
 
 /*ABOUT*/
+
+.about{
+	min-height:300px;
+}
+.about1{
+	min-height:40px;
+	font-weight:600;
+	padding-top:1em;
+}
 .animated-strike {
   background: linear-gradient(to left, transparent 50%, #4e3619 50%);
   background-repeat: repeat-x;
@@ -98,28 +109,74 @@ div{
   background-position: -50% 100%;
 }
 
+.animated-strike1, u {
+  background: linear-gradient(to right, transparent 50%, #4e3619 50%);
+  background-repeat: repeat-x;
+  background-position: 0 50%;
+  background-size: 200% 5px;
+  transition: background-position 1s;
+  font-family:playfair display;
+}
+.animated-strike1:hover {
+  background-position: -92% 100%;
+  color:#4e3619;
+}
 
+.bio{
+	font-family:playfair display;
+	font-size:22px;
+	word-spacing:.04em;
+	font-style:italic;
+	text-align:justify;
+}
+.brown:hover{
+	color:#4e3619;
+}
+.profile-img{
+	width:100%;
+}
 
-/*WORK */
+/*PROJECT */
 
 .work-banner{
 position: relative;
   top: 50%;
   padding: 1px;
   height:180px;
-  align-items:center;
-  font-family:bebas neue;
+  align-items:center; 
 }
 .work-banner-carousel{
 	font-size:160px;
 	font-weight:700;
-	
 	color:#4e3619;
 }
-
+.work-banner-carousel a{
+	font-family:bebas neue;
+	text-decoration:none;
+	color:#4e3619;
+}
+.view-more{
+	align-self:flex-end;
+	display:flex;
+	padding-top:1em;
+	align-items:right;
+}
+.view-more a{
+	font-family:playfair display;
+	font-weight:600;
+	text-decoration:none;
+	color:#2a2b2b;
+	text-align:right;
+}
+.btn2{
+	border:2px solid #2A2B2B;
+	border-radius:2em;
+	padding:6px;
+	align-items:right;
+}
 
 .enquiry{
-	padding:95px;
+	padding:35px;
 	height:100px;
 	font-size:18px;
 	font-weight:600;
@@ -127,17 +184,26 @@ position: relative;
 	align-items:center;
 	color:#4e3619;
 }
+
+.line-wrapper1{
+	padding-top:3em;
+}
+.line-wrapper2{
+	padding-bottom:3em;
+}
 .collaborate-banner{
 	position: relative;
-  top: 50%;
-  padding: 1px;
-  height:180px;
-  align-items:center;
+	display:inline-flex;
+	align-self:center;
+	height:180px;
+  	
 }
 .collaborate-banner-carousel{
-	font-size:160px;
+	font-size:130px;
 	font-weight:700;
+	top:50%;
 }
+
 .collaborate-banner-carousel a{
 	font-family:bebas neue;
 	text-decoration:none;
@@ -150,20 +216,27 @@ position: relative;
 	text-decoration:none;
 	font-family:playfair display;
 	letter-spacing:.1em;
-	font-size:30px;
+	font-size:35px;
+	font-style:italic;
 	font-weight:700;
-	color:#1A1818;
+	color:#1A1818;padding-top:2em;
 }
+.email{
+
+	z-index:5;
+}
+
 .footer-place{
 	postion:relative;
 	top:100px;
+	padding:1em;
 }
 .footer-social{
 	display:flex;
 	justify-content: center;
 	min-height: 50px;
 	flex-wrap:wrap;
-	padding:9px 0;
+	padding:25px 0;
 	postion:relative;
 	bottom:-180px;
 }
@@ -203,28 +276,100 @@ position: relative;
   cursor:pointer;
 }
 
+/*ABOUT*/
+
+.view-more{
+	font-family:playfair display;
+	font-weight:600;
+	text-align:right;
+}
+.bio{
+	font-size:16px;
+	text-align:justify;
+	word-spacing:.01em;
+}
+
+.brown:hover{
+	color:#4e3619;
+	text-decoration:3px underline;
+}
+
+.profile-img{
+	width:100%;
+}
+
+
+/*PROJECT*/
+.line-wrapper1{
+	padding-top:3em;
+}
+.line-wrapper2{
+	padding-bottom:2em;
+}
+
+.view-more{
+	align-self:flex-end;
+	display:flex;
+	padding-top:1em;
+	align-items:right;
+}
+.view-more a{
+	font-family:playfair display;
+	font-weight:600;
+	text-decoration:none;
+	color:#2a2b2b;
+	text-align:right;
+}
+.btn2{
+	border:2px solid #2A2B2B;
+	border-radius:2em;
+	padding:6px;
+	align-items:right;
+}
+.work-banner{
+position: relative;
+  top: 50%;
+  padding: 1px;
+  height:120px;
+  align-items:center; 
+}
+.work-banner-carousel{
+	font-size:90px;
+	font-weight:700;
+	color:#4e3619;
+}
+
+/*ENQUIRY*/
 .enquiry{
-	height:200px;
-	font-size:17px;
+	height:100px;
+	font-size:13px;
 	font-weight:600;
 	text-align:left;
+	padding:15px;
+	
+	text-align:center;
+	align-items:center;
+	color:#4e3619;
 }
 .collaborate-banner{
 	height:120px;
-	padding-top:-6em;
+	position:relative;
 	display:flex;
 }
 .collaborate-banner-carousel{
-	font-size:120px;
+	font-size:85px;
 	font-weight:700;
-	padding-top:-4em;
+	top:20%;
 }
 
+/*FOOTER*/
 .email-button{
 	text-decoration:none;
-	font-size:18px;
-	font-weight:600;
+	font-size:19px;
+	font-weight:700;
 	color:#1A1818;
+	text-align:right;
+	padding-left:1.1em;
 }
 .email-button:hover{
 	color:#4B3619;
@@ -234,6 +379,7 @@ position: relative;
 	min-height: 100px;
 	display:flex;
 	flex-wrap:wrap;
+	flex-direction:column;
 	padding:9px 0;
 	postion:relative;
 	bottom:-180px;
@@ -248,13 +394,16 @@ position: relative;
 	font-size:13px;
 	font-weight:600;
 	text-align:center;	
+align-self: flex-end;
 }
 
 .designer{
-	text-align:center;
+	text-align:right;
+	font-size:14px;
 }
 .place{
-	text-align:center;
+	text-align:right;
+	font-size:14px;
 }
 }
 
