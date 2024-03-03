@@ -1,0 +1,270 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',Bon-Vivant,Open-Sauce,Playfair-Display, sans-serif;
+    letter-spacing: .3px;
+}
+
+/*@font-face {
+    font-family: 'open_sauce_oneregular', ;
+    src: url('opensauceone-regular-webfont.woff') format('woff');
+}*/
+   @font-face {
+    font-family: 'open_sauce_twoextrabold';
+    src: url('opensaucetwo-extrabold-webfont.woff') format('woff');
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'bon_vivant_family_serifbold';
+    src: url('bonvivantserifbold-webfont.woff') format('woff');
+}
+
+div{
+	border:2px solid grey;
+	min-height:50px;
+	background-color:#ECE7E1;
+}
+
+.wrapper{
+	background-color:#ECE7E1;
+}
+
+.navb{
+	display:flex;
+	font-family:montserrat;
+	color:#4B3619;
+	font-size:14px;
+	font-weight:700;
+	line-height:1.4;
+	height:6.4rem;
+	justify-content:space-between;
+	vertical-align:baseline;
+	text-transform:uppercase;
+	text-align:left;
+	transition: text-decoration 0.5s linear;
+}
+.navb:hover{
+  text-decoration: line-through;
+  cursor:pointer;
+}
+.btn1{
+	border:3px solid #4B3619;
+	border-radius:1.5rem;
+	height:40px;
+	width:360px;
+	padding:6px;
+	text-decoration:none;
+	color:#4B3619;
+	font-size:16px;
+	font-weight:600;
+	text-align:center;
+
+}				
+
+
+.banner h1{
+	font-size:12em;
+	font-weight:800;
+	font-family:open_sauce_twoextrabold;
+	min-height:470px;
+	letter-spacing:-.05em;
+	word-wrap: break-word;
+}
+/*.banner h1:hover{
+	color:brown;
+}
+*/
+
+.fontb{
+	font-family:playfair display;
+	font-style:italics;
+}
+
+.about{
+	height:300px;
+}
+
+/*ABOUT*/
+.animated-strike {
+  background: linear-gradient(to left, transparent 50%, #4e3619 50%);
+  background-repeat: repeat-x;
+  background-position: 0 50%;
+  background-size: 200% 5px;
+  transition: background-position 1s;
+}
+.animated-strike:hover {
+  background-position: -50% 100%;
+}
+
+
+
+/*WORK */
+
+.work-banner{
+position: relative;
+  top: 50%;
+  padding: 1px;
+  height:180px;
+  align-items:center;
+  font-family:bebas neue;
+}
+.work-banner-carousel{
+	font-size:160px;
+	font-weight:700;
+	
+	color:#4e3619;
+}
+
+
+.enquiry{
+	padding:95px;
+	height:100px;
+	font-size:18px;
+	font-weight:600;
+	text-align:center;
+	align-items:center;
+	color:#4e3619;
+}
+.collaborate-banner{
+	position: relative;
+  top: 50%;
+  padding: 1px;
+  height:180px;
+  align-items:center;
+}
+.collaborate-banner-carousel{
+	font-size:160px;
+	font-weight:700;
+}
+.collaborate-banner-carousel a{
+	font-family:bebas neue;
+	text-decoration:none;
+	color:#4e3619;
+}
+
+/*FOOTER*/
+
+.email-button{
+	text-decoration:none;
+	font-family:playfair display;
+	letter-spacing:.1em;
+	font-size:30px;
+	font-weight:700;
+	color:#1A1818;
+}
+.footer-place{
+	postion:relative;
+	top:100px;
+}
+.footer-social{
+	display:flex;
+	justify-content: center;
+	min-height: 50px;
+	flex-wrap:wrap;
+	padding:9px 0;
+	postion:relative;
+	bottom:-180px;
+}
+.social-button{
+	border:3px solid #4B3619;
+	border-radius:1.3rem;
+	height:35px;
+	width:120px;
+	text-decoration:none;
+	color:#4B3619;
+	font-size:16px;
+	font-weight:600;
+	text-align:center;
+}
+.designer{
+	text-align:right;
+}
+
+
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 575.98px) {
+
+/* BANNER*/	
+ .banner h1{
+	font-size:5.8em;
+	min-height:400px;
+	letter-spacing:-.05em;
+}
+
+.navb{
+	font-size:13px;
+  }
+  .navb:hover{
+  text-decoration: line-through;
+  cursor:pointer;
+}
+
+.enquiry{
+	height:200px;
+	font-size:17px;
+	font-weight:600;
+	text-align:left;
+}
+.collaborate-banner{
+	height:120px;
+	padding-top:-6em;
+	display:flex;
+}
+.collaborate-banner-carousel{
+	font-size:120px;
+	font-weight:700;
+	padding-top:-4em;
+}
+
+.email-button{
+	text-decoration:none;
+	font-size:18px;
+	font-weight:600;
+	color:#1A1818;
+}
+.email-button:hover{
+	color:#4B3619;
+}
+.footer-social{
+	justify-content: center;
+	min-height: 100px;
+	display:flex;
+	flex-wrap:wrap;
+	padding:9px 0;
+	postion:relative;
+	bottom:-180px;
+}
+.social-button{
+	border:3px solid #4B3619;
+	border-radius:1.5rem;
+	height:30px;
+	width:110px;
+	text-decoration:none;
+	color:#4B3619;
+	font-size:13px;
+	font-weight:600;
+	text-align:center;	
+}
+
+.designer{
+	text-align:center;
+}
+.place{
+	text-align:center;
+}
+}
+
+
+@media (max-width: 767.98px) {*/
+
+/* BANNER*/	
+.banner h1{
+	font-size:5em;
+	height:200px;
+	letter-spacing:-.05em;
+}
+  }
