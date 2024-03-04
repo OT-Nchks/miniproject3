@@ -6,10 +6,6 @@
     letter-spacing: .3px;
 }
 
-/*@font-face {
-    font-family: 'open_sauce_oneregular', ;
-    src: url('opensauceone-regular-webfont.woff') format('woff');
-}*/
    @font-face {
     font-family: 'open_sauce_twoextrabold';
     src: url('opensaucetwo-extrabold-webfont.woff') format('woff');
@@ -21,15 +17,19 @@
     src: url('bonvivantserifbold-webfont.woff') format('woff');
 }
 
+
 div{
-	border:2px solid grey;
+/*	border:1px solid grey;*/
 	min-height:50px;
 	background-color:#ECE7E1;
 }
 
 .wrapper{
+	border:1px solid #4e3619;
 	background-color:#ECE7E1;
 }
+
+
 
 .navb{
 	display:flex;
@@ -94,6 +94,7 @@ div{
 	min-height:300px;
 }
 .about1{
+	font-size:25px;
 	min-height:40px;
 	font-weight:600;
 	padding-top:1em;
@@ -134,6 +135,7 @@ div{
 }
 .profile-img{
 	width:100%;
+	z-index:10;
 }
 
 /*PROJECT */
@@ -191,6 +193,7 @@ position: relative;
 .line-wrapper2{
 	padding-bottom:3em;
 }
+
 .collaborate-banner{
 	position: relative;
 	display:inline-flex;
@@ -209,6 +212,26 @@ position: relative;
 	text-decoration:none;
 	color:#4e3619;
 }
+
+.project-vid{
+	width:410px;
+	height:410px;
+}
+
+.btn3{
+	border:2px solid #2A2B2B;
+	border-radius:2em;
+	padding:6px;
+	font-family:playfair display;
+	text-decoration:none;
+	font-weight:600;
+	font-size:20px;
+	font-style:italic;
+	color:#2a2b2b;
+	justify-content: flex-start;
+}
+
+
 
 /*FOOTER*/
 
@@ -231,6 +254,7 @@ position: relative;
 	top:100px;
 	padding:1em;
 }
+
 .footer-social{
 	display:flex;
 	justify-content: center;
@@ -240,6 +264,7 @@ position: relative;
 	postion:relative;
 	bottom:-180px;
 }
+
 .social-button{
 	border:3px solid #4B3619;
 	border-radius:1.3rem;
@@ -251,9 +276,11 @@ position: relative;
 	font-weight:600;
 	text-align:center;
 }
+
 .designer{
 	text-align:right;
 }
+
 
 
 
@@ -277,6 +304,12 @@ position: relative;
 }
 
 /*ABOUT*/
+.about1{
+	font-size:17px;
+	min-height:70px;
+	font-weight:600;
+	padding-top:1em;
+}
 
 .view-more{
 	font-family:playfair display;
@@ -339,6 +372,10 @@ position: relative;
 	color:#4e3619;
 }
 
+.project-vid{
+	width:100%;
+	
+}
 /*ENQUIRY*/
 .enquiry{
 	height:100px;
